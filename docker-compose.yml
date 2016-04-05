@@ -3,7 +3,7 @@ version: '2'
 services:
 
     main:
-        image: loomchild/gogs
+        image: puffinrocks/gogs
         ports: 
             - 3000
         volumes: 
