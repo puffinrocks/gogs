@@ -3,6 +3,7 @@ set -e
 
 # Don't change secret on every restart
 if [[ ! -f /data/gogs/conf/secret ]]; then
+    mkdir -p /data/gogs/conf
     SECRET=`head /dev/urandom | tr -dc A-Za-z0-9 | head -c 12`
     echo "SECRET=$SECRET" > /data/gogs/conf/secret
 fi
