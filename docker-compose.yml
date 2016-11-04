@@ -6,8 +6,6 @@ services:
         image: puffinrocks/gogs
         ports: 
             - 3000
-        volumes: 
-            - main_data:/data
         environment:
             - VIRTUAL_HOST
             - VIRTUAL_PORT=3000
@@ -15,6 +13,11 @@ services:
             - front
             - back
             - default
+        volumes: 
+            - main_data:/data
+        tmpfs:
+            - /run
+            - /tmp
 
 volumes:
     main_data:
