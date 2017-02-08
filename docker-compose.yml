@@ -3,7 +3,7 @@ version: '2'
 services:
 
     main:
-        image: puffinrocks/gogs
+        image: puffinrocks/gogs:0.9.128
         ports: 
             - 3000
         environment:
