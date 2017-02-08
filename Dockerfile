@@ -1,4 +1,4 @@
-FROM gogs/gogs:latest
+FROM gogs/gogs:0.9.128
 
 ENV VERSION=0.9.128
 
