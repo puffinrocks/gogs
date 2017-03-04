@@ -9,6 +9,9 @@ services:
         environment:
             - VIRTUAL_HOST
             - VIRTUAL_PORT=3000
+            - LETSENCRYPT_HOST
+            - LETSENCRYPT_EMAIL
+            - LETSENCRYPT_TEST
         networks:
             - front
             - back
